@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Noor AI</title>
+</head>
+<body>
+  <h1>Assalamu Alaikum, Main Noor hoon</h1>
+  <p>Main aapki personal voice assistant hoon. Aap kuch bhi poochh sakte hain.</p>
+  <button onclick="speak()">Kuch Boliye Noor</button>
+
+  <script>
+    function speak() {
+      const msg = new SpeechSynthesisUtterance();
+      msg.text = "Assalamu Alaikum, Main Noor hoon. Aap kya janna chahenge?";
+      window.speechSynthesis.speak(msg);
+    }
+  </script>
+</body>
+</html>
